@@ -1,0 +1,43 @@
+  $version: "1.1.1";
+  /* ---------------------
+      IMPORT FILES
+------------------------- */
+
+  @import"variables";
+  @import"fonts";
+  @import"mixin";
+  /* ---------------------
+      IMPORT SECTIONS FILES
+------------------------- */
+
+  @import"preloader";
+  @import "animation";
+  @import"partials/navbar";
+  @import"partials/header";
+  @import "partials/_slider";
+
+  /* ---------------------
+        GENERAL
+--------------------- */
+
+  body {
+    font-family: mainFontRegular;
+    line-height: 1.2;
+    background-color: $white;
+    direction: rtl;
+    overflow: auto;
+  }
+
+  *,
+  *:before,
+  *:after {
+    box-sizing: border-box;
+    text-align: right;
+  }
+  .owl-theme{
+    direction: ltr !important;
+  }
+
+  .LightBlue {
+    color: $LightBlue-color !important;
+  }

@@ -1,0 +1,226 @@
+
+
+  @-webkit-keyframes dot-move {
+    0% {
+        transform: translateX(0)
+    }
+    18%,
+    22% {
+        transform: translateX(-20px)
+    }
+    40%,
+    to {
+        transform: translateX(0)
+    }
+}
+
+@keyframes dot-move {
+    0% {
+        transform: translateX(0)
+    }
+    18%,
+    22% {
+        transform: translateX(-70px)
+    }
+    40%,
+    to {
+        transform: translateX(0)
+    }
+}
+@-webkit-keyframes dot-colors {
+    0% {
+        background-color: #fbd301;
+    }
+    50% {
+        background-color: #208bf1
+    }
+    to {
+        background-color: #ff3270
+    }
+}
+
+@keyframes dot-colors {
+    0% {
+        background-color: #fbd301;
+    }
+    50% {
+        background-color: #208bf1
+    }
+    to {
+        background-color: #ff3270
+    }
+}
+
+@-webkit-keyframes dot-rotate-1 {
+    0% {
+        transform: rotate(-105deg)
+    }
+    to {
+        transform: rotate(270deg)
+    }
+}
+
+@keyframes dot-rotate-1 {
+    0% {
+        transform: rotate(-105deg)
+    }
+    to {
+        transform: rotate(270deg)
+    }
+}
+
+@-webkit-keyframes dot-rotate-2 {
+    0% {
+        transform: rotate(165deg)
+    }
+    to {
+        transform: rotate(540deg)
+    }
+}
+
+@keyframes dot-rotate-2 {
+    0% {
+        transform: rotate(165deg)
+    }
+    to {
+        transform: rotate(540deg)
+    }
+}
+
+@-webkit-keyframes dot-rotate-3 {
+    0% {
+        transform: rotate(435deg)
+    }
+    to {
+        transform: rotate(810deg)
+    }
+}
+
+@keyframes dot-rotate-3 {
+    0% {
+        transform: rotate(435deg)
+    }
+    to {
+        transform: rotate(810deg)
+    }
+}
+
+@-webkit-keyframes dot-rotate-4 {
+    0% {
+        transform: rotate(705deg)
+    }
+    to {
+        transform: rotate(3turn)
+    }
+}
+
+@keyframes dot-rotate-4 {
+    0% {
+        transform: rotate(705deg)
+    }
+    to {
+        transform: rotate(3turn)
+    }
+}
+
+.dot-wrap .dots {
+    width: 0;
+    height: 0;
+    position: relative;
+    top: 50%;
+    left: 0;
+    margin: auto;
+    -webkit-filter: url(#goo);
+    filter: url(#goo)
+}
+
+.dot-wrap .dots .dot{
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 0;
+    top: 0
+}
+
+
+.dot-wrap .dots .dot:first-child {
+  -webkit-animation: dot-rotate-1 4s linear 0s infinite;
+  animation: dot-rotate-1 4s linear 0s infinite
+}
+.dot-wrap .dots .dot:first-child:before {
+  background-color: #ff3270;
+  -webkit-animation: dot-move 4s ease 0s infinite;
+  animation: dot-move 4s ease 0s infinite
+}
+
+.dot-wrap .dots .dot:nth-child(2) {
+  -webkit-animation: dot-rotate-2 4s linear 1s infinite;
+  animation: dot-rotate-2 4s linear 1s infinite
+}
+
+.dot-wrap .dots .dot:nth-child(2):before {
+  background-color: #208bf1;
+  -webkit-animation: dot-move 4s ease 1s infinite;
+  animation: dot-move 4s ease 1s infinite
+}
+
+.dot-wrap .dots .dot:nth-child(3) {
+  -webkit-animation: dot-rotate-3 4s linear 2s infinite;
+  animation: dot-rotate-3 4s linear 2s infinite
+}
+.dot-wrap .dots .dot:nth-child(3):before {
+  background-color: #afe102;
+  -webkit-animation: dot-move 4s ease 2s infinite;
+  animation: dot-move 4s ease 2s infinite
+}
+
+.dot-wrap .dots .dot:nth-child(4) {
+  -webkit-animation: dot-rotate-4 4s linear 3s infinite;
+  animation: dot-rotate-4 4s linear 3s infinite
+}
+
+.dot-wrap .dots .dot:nth-child(4):before {
+  background-color: #fbd301;
+  -webkit-animation: dot-move 4s ease 3s infinite;
+  animation: dot-move 4s ease 3s infinite
+}
+
+.dot-wrap .dots .dot:nth-child(5):before {
+  z-index: 100;
+  width: 45.5px;
+  height: 45.5px;
+  margin-left: -22.75px;
+  margin-top: -22.75px;
+  -webkit-animation: dot-colors 4s ease infinite;
+  animation: dot-colors 4s ease infinite
+}
+
+.dot-wrap .dots .dot:before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  background: #fbd301;
+  position: absolute;
+  left: 50%;
+  transform: translateX(0) rotate(0);
+  margin-left: -17.5px;
+  margin-top: -17.5px
+}
+
+.dot-wrap .dots svg,
+.dot-wrap .dots svg:not(:root) {
+  overflow: auto
+}
+
+@media only screen and (max-width:768px) {
+  .dot-wrap {
+      margin-top: 80px !important
+  }
+}
+
+@media only screen and (max-width:768px) {
+  svg {
+      height: 100px
+  }
+}

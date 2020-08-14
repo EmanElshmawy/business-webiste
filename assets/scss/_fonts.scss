@@ -1,0 +1,13 @@
+  /* ------------------
+        FONTS
+--------------------- */
+
+@font-face {
+    font-family: mainFontRegular;
+    src: url("../fonts/CoconNextArabic-Regular.TTF"), url("../fonts/CoconNextArabic-Regular.eot") format("embedded-opentype"), url("../fonts/CoconNextArabic-Regular.woff2") format("woff2"), url("../fonts/CoconNextArabic-Regular.woff") format("woff"), url("../fonts/CoconNextArabic-Regular.ttf") format("truetype"), url("../fonts/CoconNextArabic-Regular.svg") format("svg");
+  }
+
+  @font-face {
+    font-family: mainFontBold;
+    src: url("../fonts/CoconNextArabic-Bold.TTF"), url("../fonts/CoconNextArabic-Bold.eot") format("embedded-opentype"), url("../fonts/CoconNextArabic-Bold.woff2") format("woff2"), url("../fonts/CoconNextArabic-Bold.woff") format("woff"), url("../fonts/CoconNextArabic-Bold.ttf") format("truetype"), url("../fonts/CoconNextArabic-Bold.svg") format("svg");
+  }
