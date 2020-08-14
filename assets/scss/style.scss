@@ -15,7 +15,7 @@
   @import"partials/navbar";
   @import"partials/header";
   @import "partials/_slider";
-
+  @import "partials/footer";
   /* ---------------------
         GENERAL
 --------------------- */
@@ -26,6 +26,7 @@
     background-color: $white;
     direction: rtl;
     overflow: auto;
+    height: 140vh;
   }
 
   *,
@@ -38,6 +39,10 @@
     direction: ltr !important;
   }
 
-  .LightBlue {
-    color: $LightBlue-color !important;
+
+  .home{
+    background-image: url("../images/home.svg");
+    background-size: 109%;
+    background-repeat: no-repeat;
+    background-position: -78% 109%;
   }

@@ -1,12 +1,19 @@
-.c-header{
+.c-header {
     position: relative;
-    padding-top: 16%;
-    &__content{
-        font-size: 30px;
-        // font-weight: 600;
+    padding: 20% 0 0px;
+    &__content {
+        font-size: 30px; // font-weight: 600;
         width: 50%;
         text-align: right;
-
+    }
+    &__img-wrapper {
+        width: 25%;
+        padding: 30px;
+        text-align: center;
+        img {
+            width: 150px;
+            margin: 0 auto;
+        }
     }
 }
 
@@ -26,7 +33,6 @@
 //     box-shadow: 9984px 0 0 0 #9880ff, 9999px 0 0 0 #9880ff, 10014px 0 0 0 #9880ff;
 //     animation: dotCarousel 1.5s infinite linear;
 //   }
-  
 //   @keyframes dotCarousel {
 //     0% {
 //       box-shadow: 9984px 0 0 -1px #9880ff, 9999px 0 0 1px #9880ff,
@@ -41,4 +47,3 @@
 //         9984px 0 0 -1px #9880ff;
 //     }
 //   }
- 
