@@ -1,4 +1,3 @@
-
 // preloader
 (function ($) {
     $.fn.preloadinator = function (options) {
@@ -32,7 +31,7 @@
         }
 
         $.fn.preloadinator.removePreloader = function () {
-            $('body').css('overflow', 'auto');
+            // $('body').css('overflow', 'auto');
 
             $(preloader)[settings.animation](settings.animationDuration, function () {
                 if (settings.scroll === false) {
@@ -93,6 +92,19 @@ _gaq.push(['_trackPageview']);
 
 
 jQuery(document).ready(function ($) {
+
+    $(function () {
+        $("#datepicker").datepicker();
+    });
+
+    $("body").niceScroll({
+        cursorwidth: 8,
+        cursoropacitymin: 0.4,
+        cursorcolor: '#1e8fff',
+        cursorborder: 'none',
+        cursorborderradius: 0,
+        autohidemode: 'leave'
+    });
     $('.owl-carousel').owlCarousel({
         loop: true,
         nav: true,
@@ -153,7 +165,7 @@ jQuery(document).ready(function ($) {
         opacity: 1,
         left: 0
     }, 8000, "linear", function () {
-        $('#myModal').modal('show'); 
+        $('#exampleModal').modal('show');
 
     });
 });

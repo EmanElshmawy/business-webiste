@@ -12,9 +12,11 @@
 
   @import"preloader";
   @import "animation";
+  @import "partials/_auth-form";
   @import"partials/navbar";
   @import"partials/header";
   @import "partials/_slider";
+  @import "partials/subscribe";
   @import "partials/footer";
   /* ---------------------
         GENERAL
@@ -26,7 +28,7 @@
     background-color: $white;
     direction: rtl;
     overflow: auto;
-    height: 140vh;
+    min-height: 100vh;
   }
 
   *,
@@ -35,14 +37,24 @@
     box-sizing: border-box;
     text-align: right;
   }
-  .owl-theme{
+
+  .owl-theme {
     direction: ltr !important;
   }
 
-
-  .home{
+  .home {
     background-image: url("../images/home.svg");
     background-size: 109%;
     background-repeat: no-repeat;
-    background-position: -78% 109%;
+    background-position: -66% 69%;
+  }
+
+  .login {
+    background-image: url("../images/loginBg.svg");
+    background-size: 95%;
+    background-repeat: no-repeat;
+    background-position:-120px 100%;
+    // justify-content: center;
+    // display: flex;
+    // flex-direction: column;
   }

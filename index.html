@@ -20,6 +20,7 @@
 </head>
 
 <body class="home">
+  
   <div class="preloader js-preloader">
     <div class="preloader-wrapper">
       <div class="dot-wrap mt-4">
@@ -44,7 +45,7 @@
   <!-- loader end -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navbar">
     <div class="container-fluid">
-      <a class="navbar-brand">
+      <a class="navbar-brand" href="./index.html">
         <img src="assets/images/logo.svg" alt="LOGO" class="img-fluid w-100">
       </a>
       <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav" aria-expanded="false"
@@ -54,17 +55,17 @@
       <div id="my-nav" class="collapse navbar-collapse">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link">
+            <a class="nav-link"  data-toggle="modal" data-target="#exampleModal">
               <img src="./assets/images/email.svg" alt="">
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link">
+            <a class="nav-link" href="./signup.html">
               <img src="./assets/images/adduser.svg" alt="">
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link">
+            <a class="nav-link" href="#">
               <img src="./assets/images/layers.svg" alt="">
             </a>
           </li>
@@ -74,16 +75,40 @@
   </nav>
 
   <!-- navbar end -->
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal-end -->
   <section class="c-header">
     <div class="container-fluid d-flex align-items-center">
       <div class="c-header__img-wrapper">
         <img src="./assets/images/loader.svg" alt="">
       </div>
       <div class="c-header__content">
-        <h2>منصة بزنس نورة، تجربة تعــلمـ رائعة تستند إلى خبـــرات حقيقـة بكل ما يخص ريادة الأعمال</h2>
+        <h2>منصة بزنس نورة، تجربة تعــلمـ رائعه</h2>
+        <h2> تستند إلى خبـــرات حقيقـة بكل ما يخص ريادة الأعمال</h2>
       </div>
     </div>
   </section>
+
+
   <!-- header section end -->
   <!-- <div class="snippet" data-title=".dot-carousel">
     <div class="stage">
@@ -92,27 +117,28 @@
   </div> -->
   <section class="c-slider">
     <div class="c-slider-wrapper">
-      <div class="row">
+      <div class="row align-items-center">
         <div class="col-lg-3">
           <nav class="nav flex-column">
             <div class="nav-item">
               <p> سوق العمل</p>
-              <a class="nav-link" href="#">ل اطلع على آخر نماذجنا
+              <a class="nav-link" href="#">
+                  اطلع على آخر نماذجنا
               </a>
             </div>
             <div class="nav-item active">
               <p> ورشة عمل بعنوان... </p>
-              <a class="nav-link active" href="#">ل سجل الآن
+              <a class="nav-link" href="#">سجل الان
               </a>
             </div>
             <div class="nav-item">
-              <p> سوق العمل</p>
-              <a class="nav-link" href="#">ل اطلع على آخر نماذجنا
+              <p> ورشة عمل بعنوان... </p>
+              <a class="nav-link " href="#">سجل الان
               </a>
             </div>
             <div class="nav-item">
-              <p> سوق العمل</p>
-              <a class="nav-link" href="#">ل اطلع على آخر نماذجنا
+              <p> ورشة عمل بعنوان... </p>
+              <a class="nav-link" href="#">سجل الان
               </a>
             </div>
           </nav>
@@ -147,20 +173,22 @@
   </section>
 
   <!-- end slider section -->
-
-  <footer>
-    <div class="container">
-      <ul class="list-unstyled">
-        <li class="footer-links">
-
-        </li>
-        <li class="footer-links">
-
-        </li>
-      </ul>
-      <p class="copy write">All rights reserved © Businessnoura 2019 </p>
-    </div>
-  </footer>
+  <footer class="footer">
+      <div class="footer-wrapper">
+        <ul class="list-unstyled white-imgs">
+          <li class="footer-links">
+            <img src="./assets/images/youtube.svg" alt="">
+          </li>
+          <li class="footer-links">
+            <img src="./assets/images/linkedin.svg" alt="">
+          </li>
+          <li class="footer-links">
+            <img src="./assets/images/twitter.svg" alt="">
+          </li>
+        </ul>
+        <p class="copy write">All rights reserved © Businessnoura 2019 </p>
+      </div>
+    </footer>
 
   <!-- scripts -->
   <script src="assets/js/jquery-3.1.1.min.js"></script>
