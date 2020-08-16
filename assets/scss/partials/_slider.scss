@@ -10,25 +10,22 @@
             padding-right: 25px;
             .nav-item {
                 margin-bottom: 30px;
-                &:first-child{
-                    margin-top: 2%;
-                    margin-bottom: 40px;
-                }
+          
                 p {
-                    color: $warmgrey;
-                    font-size: 18px;
+                    color: rgba(183 ,183, 183 , 0.5);
+                    font-size: 22px;
                     margin-bottom: 0;
                 }
                 .nav-link {
                     padding: 0;
-                    font-size: 9px;
-                    color: $warmgrey;
+                    font-size: 12px;
+                    color: rgba(183 ,183, 183 , 0.5);
                     position: relative;
                     display: inline-block;
                     line-height: 2;
                     &::before {
                         content: "";
-                        background: grey;
+                        background: rgba(183 ,183, 183 , 0.5);
                         height: 2px;
                         position: absolute;
                         width: 100%;
@@ -55,6 +52,25 @@
                             content: "";
                             transition: 0.2s width ease-in-out;
                             width: 100%;
+                        }
+                    }
+                }
+                &:first-child{
+                    margin-top: 2%;
+                    margin-bottom: 40px;
+                    .nav-link{
+                        &::before {
+                            width: 60%;
+                        }
+                        &::after {
+                            width: 0%;
+                        }   
+                    }
+                    &:hover{
+                        .nav-link{
+                            &::after {
+                                width: 60%;
+                            }
                         }
                     }
                 }
@@ -155,17 +171,17 @@
         background: transparent !important;
     }
     .owl-nav .icon img {
-        width: 30px;
-        height: 30px;
-        padding: 5px;
+        width: 40px;
+        height: 40px;
+        padding: 10px;
         border: 1px solid black;
         border-radius: 50%;
     }
     .owl-nav button.owl-prev {
-        left: 20px;
+        left:40px;
     }
     .owl-nav button.owl-next {
-        right: 20px;
+        right: 40px;
     }
     /* Other */
     button:focus,

@@ -308,7 +308,7 @@
         height: 30px; }
       .navbar .nav-item .nav-link::before {
         content: "";
-        background: grey;
+        background: rgba(183, 183, 183, 0.5);
         height: 2px;
         position: absolute;
         width: 100%;
@@ -523,23 +523,20 @@ select::-ms-expand {
       padding-right: 25px; }
       .c-slider-wrapper .nav .nav-item {
         margin-bottom: 30px; }
-        .c-slider-wrapper .nav .nav-item:first-child {
-          margin-top: 2%;
-          margin-bottom: 40px; }
         .c-slider-wrapper .nav .nav-item p {
-          color: #969696;
-          font-size: 18px;
+          color: rgba(183, 183, 183, 0.5);
+          font-size: 22px;
           margin-bottom: 0; }
         .c-slider-wrapper .nav .nav-item .nav-link {
           padding: 0;
-          font-size: 9px;
-          color: #969696;
+          font-size: 12px;
+          color: rgba(183, 183, 183, 0.5);
           position: relative;
           display: inline-block;
           line-height: 2; }
           .c-slider-wrapper .nav .nav-item .nav-link::before {
             content: "";
-            background: grey;
+            background: rgba(183, 183, 183, 0.5);
             height: 2px;
             position: absolute;
             width: 100%;
@@ -561,6 +558,15 @@ select::-ms-expand {
             content: "";
             transition: 0.2s width ease-in-out;
             width: 100%; }
+        .c-slider-wrapper .nav .nav-item:first-child {
+          margin-top: 2%;
+          margin-bottom: 40px; }
+          .c-slider-wrapper .nav .nav-item:first-child .nav-link::before {
+            width: 60%; }
+          .c-slider-wrapper .nav .nav-item:first-child .nav-link::after {
+            width: 0%; }
+          .c-slider-wrapper .nav .nav-item:first-child:hover .nav-link::after {
+            width: 60%; }
         .c-slider-wrapper .nav .nav-item.active p {
           font-size: 32px;
           color: black; }
@@ -636,15 +642,15 @@ select::-ms-expand {
   .c-slider .owl-carousel .owl-nav button.owl-next:hover {
     background: transparent !important; }
   .c-slider .owl-nav .icon img {
-    width: 30px;
-    height: 30px;
-    padding: 5px;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
     border: 1px solid black;
     border-radius: 50%; }
   .c-slider .owl-nav button.owl-prev {
-    left: 20px; }
+    left: 40px; }
   .c-slider .owl-nav button.owl-next {
-    right: 20px; }
+    right: 40px; }
   .c-slider button:focus,
   .c-slider button:active {
     outline: none;
@@ -736,7 +742,7 @@ body {
       background-position: -50px 100%; } }
   @media (max-width: 1650px) {
     .login {
-      background-size: 100%;
+      background-size: 95%;
       background-position: -160px 100%; } }
   @media (max-width: 1380px) {
     .login {

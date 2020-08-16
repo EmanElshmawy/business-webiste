@@ -16,7 +16,7 @@
             start = new Date().getTime();
 
         $.fn.preloadinator.disableScroll = function () {
-            $('body').css('overflow', 'hidden');
+            $('body').css('overflow-x', 'hidden');
 
             if (typeof settings.afterDisableScroll == 'function') {
                 settings.afterDisableScroll.call(this);
@@ -31,7 +31,7 @@
         }
 
         $.fn.preloadinator.removePreloader = function () {
-            $('body').css('overflow', 'auto');
+            $('body').css('overflow', 'inheret');
 
             $(preloader)[settings.animation](settings.animationDuration, function () {
                 if (settings.scroll === false) {
