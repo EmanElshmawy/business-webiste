@@ -1,15 +1,34 @@
 .c-header {
     position: relative;
     padding: 20% 0 0px;
+    @media(max-width: 520px) {
+        margin-top: 5rem;
+    }
+    .container-fluid {
+        @media(max-width: 768px) {
+            flex-direction: column;
+        }
+    }
     &__content {
-        font-size: 30px; // font-weight: 600;
+        font-size: 30px; 
         width: 50%;
         text-align: right;
+        @media(max-width: 768px) {
+            width: 90%;
+            margin: 0 auto;
+            h2 {
+                font-size: 1.2rem;
+            }
+        } 
     }
     &__img-wrapper {
         width: 25%;
         padding: 30px;
         text-align: center;
+        @media(max-width: 768px) {
+            width: 90%;
+            margin: 0 auto;
+        }
         img {
             width: 150px;
             margin: 0 auto;
@@ -17,33 +36,104 @@
     }
 }
 
-// /**
-//  * ==============================================
-//  * Dot Carousel
-//  * ==============================================
-//  */
-// .dot-carousel {
-//     position: relative;
-//     left: -9999px;
-//     width: 50px;
-//     height: 50px;
-//     border-radius: 5px;
-//     background-color: #9880ff;
-//     color: #9880ff;
-//     box-shadow: 9984px 0 0 0 #9880ff, 9999px 0 0 0 #9880ff, 10014px 0 0 0 #9880ff;
-//     animation: dotCarousel 1.5s infinite linear;
-//   }
-//   @keyframes dotCarousel {
-//     0% {
-//       box-shadow: 9984px 0 0 -1px #9880ff, 9999px 0 0 1px #9880ff,
-//         10014px 0 0 -1px #9880ff;
-//     }
-//     50% {
-//       box-shadow: 10014px 0 0 -1px #9880ff, 9984px 0 0 -1px #9880ff,
-//         9999px 0 0 1px #9880ff;
-//     }
-//     100% {
-//       box-shadow: 9999px 0 0 1px #9880ff, 10014px 0 0 -1px #9880ff,
-//         9984px 0 0 -1px #9880ff;
-//     }
-//   }
+.modal {
+    background-color: rgba(000, 000, 000, 0.5);
+    .modal-header {
+        border-bottom: 0px;
+        display: none;
+        @media(max-width: 992px) {
+            display: block;
+        }
+        .close {
+            color: #fff;
+        }
+    }
+    .img-wrapper {
+        width: 105px;
+        margin: 0 auto 40px;
+    }
+    h3 {
+        color: #fff;
+        margin-bottom: 7rem;
+        display: flex;
+        justify-content: center;
+    }
+    .form-group {
+        margin-bottom: 20px;
+        position: relative;
+        .form-control {
+            background-color: transparent;
+            border-color: #fff;
+            color: #fff;
+            border-radius: 0;
+        }
+        margin-bottom: 20px;
+        position: relative;
+        .form-control {
+            background-color: transparent;
+            border-color: #fff;
+            color: #fff;
+            border-radius: 0;
+        }
+        ::placeholder {
+            color: #fff;
+            opacity: 1;
+        }
+        :-ms-input-placeholder {
+            color: #fff;
+        }
+        ::-ms-input-placeholder {
+            color: #fff;
+        }
+        .icon {
+            width: 20px;
+            position: absolute;
+            top: 0;
+            left: 10px;
+            bottom: 0%;
+            display: flex;
+            justify-content: center;
+            img {
+                filter: brightness(0) invert(1);
+                width:100%;
+            }
+        }
+    }
+    .btn-wrapper {
+        text-align: center;
+        .btn {
+            padding: 5px 50px;
+            border-radius: 20px;
+        }
+    }
+}
+
+/* This is to remove the arrow of select element in IE */
+
+select::-ms-expand {
+    display: none;
+}
+
+select {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+@-moz-document url-prefix() {
+    .ui-select {
+        border: 1px solid #CCC;
+        border-radius: 4px;
+        box-sizing: border-box;
+        position: relative;
+        overflow: hidden;
+    }
+    .ui-select select {
+        width: 110%;
+        background-position: right 30px center !important;
+        border: none !important;
+    }
+}
+
+select::-ms-expand {
+    display: none;
+}

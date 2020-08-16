@@ -45,53 +45,63 @@
   </div>
   <!-- loader end -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navbar">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="./index.html">
-          <img src="assets/images/logo.svg" alt="LOGO" class="img-fluid w-100">
-        </a>
-        <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav" aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div id="my-nav" class="collapse navbar-collapse">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link"  data-toggle="modal" data-target="#exampleModal">
-                <img src="./assets/images/email.svg" alt="">
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./signup.html">
-                <img src="./assets/images/adduser.svg" alt="">
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <img src="./assets/images/layers.svg" alt="">
-              </a>
-            </li>
-          </ul>
-        </div>
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html">
+        <img src="assets/images/logo.svg" alt="LOGO" class="img-fluid w-100">
+      </a>
+      <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="my-nav" class="collapse navbar-collapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="modal" data-target="#exampleModal">
+              <img src="./assets/images/email.svg" alt="">
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="./signup.html">
+              <img src="./assets/images/usericon.svg" alt="">
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <img src="./assets/images/layers.svg" alt="">
+            </a>
+          </li>
+        </ul>
       </div>
-    </nav>
-  
+    </div>
+  </nav>
+
 
   <!-- navbar end -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body">
-          ...
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+          <div class="form-wrapper">
+            <div class="img-wrapper">
+              <img src="./assets/images/loader.svg" alt="">
+            </div>
+            <h3>ِأهلا بك، سيتم تدشين هذه الخدمة قريبا
+              <br> اضف ايميلك ليصلك إشعارا عند الإطلاق
+            </h3>
+            <form>
+              <div class="form-group">
+                <input type="email" class="form-control" placeholder="اضف ايميلك هنا">
+                <div class="icon">
+                  <img src="./assets/images/check.svg" alt="">
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </div>
@@ -115,14 +125,14 @@
     <!-- users -->
     <ul class="nav nav-tabs user-nav" role="tablist">
       <li class="nav-item" role="presentation">
-        <a class="nav-link " id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">رائد أعمال
+        <a class="nav-link " id="home-tab" data-toggle="tab" href="#home" role="tab" aria-selected="true">رائد أعمال
         </a>
       </li>
       <li class="nav-item" role="presentation">
-        <a class="nav-link active" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">المرشدين</a>
+        <a class="nav-link active" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-selected="false">المرشدين</a>
       </li>
       <li class="nav-item" role="presentation">
-        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">المستثمرين</a>
+        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-selected="false">المستثمرين</a>
       </li>
     </ul>
     <!-- end -->
@@ -131,15 +141,21 @@
         <form>
           <div class="form-group">
             <input type="email" class="form-control" placeholder="الإيميل">
+            <div class="icon">
+              <img src="./assets/images/check.svg" alt="">
+            </div>
           </div>
           <div class="form-group">
             <input type="password" class="form-control" placeholder="الرقم السري">
+            <div class="icon">
+              <img src="./assets/images/check.svg" alt="">
+            </div>
           </div>
           <div class="form-group form-check">
             <a href="#">هل نسيت الحساب؟</a>
-            </div>
+          </div>
           <div class="btn-wrapper">
-              <button type="submit" class="btn btn-outline-light">دخول</button>
+            <button type="submit" class="btn btn-outline-light">دخول</button>
           </div>
         </form>
       </div>
@@ -148,29 +164,48 @@
         <form>
           <div class="form-group">
             <input type="text" class="form-control" placeholder="الاسم الأول">
+            <div class="icon">
+              <img src="./assets/images/check.svg" alt="">
+            </div>
           </div>
           <div class="form-group">
             <input type="text" class="form-control" placeholder="الاسم الأخير">
+            <div class="icon">
+              <img src="./assets/images/check.svg" alt="">
+            </div>
           </div>
           <div class="form-group">
             <input type="password" class="form-control" placeholder="الرقم السري">
+            <div class="icon">
+              <img src="./assets/images/check.svg" alt="">
+            </div>
           </div>
           <div class="form-group">
             <input type="email" class="form-control" placeholder="الإيميل">
+            <div class="icon">
+              <img src="./assets/images/check.svg" alt="">
+            </div>
           </div>
           <div class="form-group">
             <input type="text" class="form-control" placeholder="تاريخ الميلاد" id="datepicker">
+            <div class="icon">
+              <img src="./assets/images/check.svg" alt="">
+            </div>
           </div>
           <div class="form-group">
-            <select name="gender" id="gender" class="form-control" placeholder="الجنس">
+            <select name="gender" id="gender" class="form-control" >
               <option disabled selected>الجنس</option>
               <option>ذكر</option>
               <option>انثي</option>
             </select>
+            <div class="icon">
+              <img src="./assets/images/check.svg" alt="">
+            </div>
           </div>
           <div class="btn-wrapper">
-              <button type="submit" class="btn btn-outline-light">تـسـجـيـل</button>
-          </div>        </form>
+            <button type="submit" class="btn btn-outline-light">تـسـجـيـل</button>
+          </div>
+        </form>
       </div>
       <!-- end register form -->
     </div>
@@ -184,13 +219,19 @@
     <div class="footer-wrapper">
       <ul class="list-unstyled white-imgs">
         <li class="footer-links">
-          <img src="./assets/images/youtube.svg" alt="">
+          <a href="#" target="_blank">
+            <img src="./assets/images/youtube.svg" alt="">
+          </a>
         </li>
         <li class="footer-links">
-          <img src="./assets/images/linkedin.svg" alt="">
+          <a href="#" target="_blank">
+            <img src="./assets/images/linkedin.svg" alt="">
+          </a>
         </li>
         <li class="footer-links">
-          <img src="./assets/images/twitter.svg" alt="">
+          <a href="#" target="_blank">
+            <img src="./assets/images/twitter.svg" alt="">
+          </a>
         </li>
       </ul>
       <p class="copy write">All rights reserved © Businessnoura 2019 </p>
@@ -198,7 +239,7 @@
   </footer>
 
   <!-- scripts -->
-  <script src="assets/js/jquery-3.1.1.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
   <script src="assets/js/jquery-ui.min.js"></script>
   <script src="assets/js/jquery.nicescroll.min.js"></script>

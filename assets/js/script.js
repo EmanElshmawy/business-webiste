@@ -31,7 +31,7 @@
         }
 
         $.fn.preloadinator.removePreloader = function () {
-            // $('body').css('overflow', 'auto');
+            $('body').css('overflow', 'auto');
 
             $(preloader)[settings.animation](settings.animationDuration, function () {
                 if (settings.scroll === false) {
@@ -92,11 +92,12 @@ _gaq.push(['_trackPageview']);
 
 
 jQuery(document).ready(function ($) {
-
+    // calender
     $(function () {
         $("#datepicker").datepicker();
     });
 
+    // nice scroll
     $("body").niceScroll({
         cursorwidth: 8,
         cursoropacitymin: 0.4,
@@ -105,6 +106,7 @@ jQuery(document).ready(function ($) {
         cursorborderradius: 0,
         autohidemode: 'leave'
     });
+    // slider
     $('.owl-carousel').owlCarousel({
         loop: true,
         nav: true,
@@ -130,6 +132,7 @@ jQuery(document).ready(function ($) {
     } else {
         $('#navbar').removeClass('scrolled-nav');
     }
+    // adding class to nav on scroll
     $(window).scroll(function () {
         scrollTop = $(window).scrollTop();
         if (scrollTop >= 100) {
@@ -139,28 +142,7 @@ jQuery(document).ready(function ($) {
         }
     });
     $.holdReady(false);
-    $(".navbar .nav-link").on('click', function (event) {
-
-        // Make sure this.hash has a value before overriding default behavior
-        if (this.hash !== "") {
-            // Prevent default anchor click behavior
-            // event.preventDefault();
-            //mPS2id-highlight
-            // Store hash
-            var hash = this.hash;
-            console.log($(hash).offset().top)
-            // Using jQuery's animate() method to add smooth page scroll
-            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-            $('html, body').animate({
-                scrollTop: $(hash).offset().top - 0
-
-            }, 800, function () {
-
-                // Add hash (#) to URL when done scrolling (default click behavior)
-                window.location.hash = hash;
-            });
-        } // End if
-    });
+    // prograssbar 
     $(".loader-modal").animate({
         opacity: 1,
         left: 0

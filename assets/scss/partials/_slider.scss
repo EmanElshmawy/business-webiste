@@ -3,10 +3,11 @@
     &-wrapper {
         width: 90%;
         margin: 0 auto;
-        box-shadow: 8px 10px 38px 0 rgba(150, 150, 150, 0.4);
+        box-shadow: 7px 7px 20px 0 rgba(0,0,0,.12);
         padding: 20px;
         background: #fff;
         .nav {
+            padding-right: 25px;
             .nav-item {
                 margin-bottom: 30px;
                 &:first-child{
@@ -59,7 +60,7 @@
                 }
              &.active{
                     p{
-                        font-size: 26px;
+                        font-size: 32px;
                         color: black;
                     }
                     .nav-link{
@@ -80,7 +81,6 @@
         .carousel-wrapper {
             position: relative;
             border-radius: 18px;
-            overflow: hidden;
             .marker {
                 width: 30px;
                 position: absolute;
@@ -94,15 +94,16 @@
                     &::after {
                         right: 0;
                         content: "";
-                        background-color: rgba(255, 209, 0, 0.8);
-                        background-image: linear-gradient(rgba(241, 18, 91, 0.1), rgba(255, 209, 0, 0.8));
+                        background:rgba(255, 209 ,0 ,80%);
                         display: block;
                         position: absolute;
                         top: 0;
                         bottom: 0;
                         left: 0;
+                        border-radius: 10px;
                         img {
                             display: block;
+                            border-radius: 10px;
                         }
                     }
                 }

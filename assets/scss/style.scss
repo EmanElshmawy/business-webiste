@@ -46,15 +46,43 @@
     background-image: url("../images/home.svg");
     background-size: 109%;
     background-repeat: no-repeat;
-    background-position: -66% 69%;
+    background-position: -66% 116%;
+    @media (max-width: 1400px) {
+      background-size: 120%;
+      background-repeat: no-repeat;
+      background-position: -34% 116%;
+    }
+    @media (max-width:1100px) {
+      background-image: none;
+    }
   }
 
   .login {
-    background-image: url("../images/loginBg.svg");
-    background-size: 95%;
-    background-repeat: no-repeat;
-    background-position:-120px 100%;
-    // justify-content: center;
-    // display: flex;
-    // flex-direction: column;
+    background-image: url("../images/loginBg.svg"); 
+    background-repeat: no-repeat; 
+    background-size: 100%;
+    background-position: -160px 100%;
+    @media(max-width: 1800px) {
+      background-size: 85%;
+      background-position: -65px 100%;
+    }
+    @media(min-width: 1699px) {
+      background-size: 85%;
+      background-position: -50px 100%;
+    }
+    @media(max-width: 1650px) {
+      background-size: 100%;
+      background-position: -160px 100%;
+    }
+    @media(max-width: 1380px) {
+      background-size: 110%;
+      background-position: -280px 100%;
+    }
+    @media(max-width: 1250px) {
+      background-size: 120%;
+      background-position: -280px 100%;
+    }
+    @media(max-width: 1200px) {
+      background-image: none
+    }
   }

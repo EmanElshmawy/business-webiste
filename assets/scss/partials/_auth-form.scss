@@ -1,15 +1,25 @@
 .auth-wrapper {
     width: 520px;
     padding-top: 17%;
+    @media(max-width: 1200px) {
+        margin-top: 15rem !important;
+        margin-bottom: 2rem !important;
+        padding:30px;
+        background-color: $blue;
+        border-radius: 20px;
+    }
     @media(max-width: 768px) {
-        width:90%;
-        margin: 0 auto;
+        width: 90%;
+        margin: 15rem auto 2rem;
     }
     .auth-header {
         margin-top: 5%;
         h2 {
             text-align: center;
             margin-bottom: 30px;
+            @media(max-width:420px){
+                font-size: 18px;
+            }
         }
     }
     .nav {
@@ -41,6 +51,9 @@
         .nav-link {
             text-align: center;
             font-size: 16px;
+            @media(max-width:420px){
+                font-size: 11px;
+            }
             &.active {
                 color: black !important;
                 border-radius: 20px;
@@ -51,18 +64,44 @@
     form {
         margin: 50px 0 0;
         min-height: 390px;
+        @media(max-width: 992px) {
+            min-height: auto !important;
+        }
         .form-group {
             margin-bottom: 20px;
+            position: relative;
             .form-control {
                 background-color: rgba(255, 255, 255, 0.3);
                 border-color: transparent;
-                color: #6c757d;
+                color: rgba(000,000,000,0.5);
+                border-radius: 0;
+            }
+            .icon {
+                display: none;
+                width: 20px;
+                position: absolute;
+                top: 0;
+                left: 10px;
+                bottom: 0%;
+                display: flex;
+                justify-content: center;
+                img {
+                    width: 100%;
+                }
             }
         }
-        .form-check{
-          a{
-            color: #6c757d;
-          }
+        .form-check {
+            &.form-control{
+                color: #6c757d !important;
+            }
+            a {
+                color: #6c757d !important;
+            }
+        }
+        select{
+            &.form-control{
+                color: #6c757d !important;
+            }
         }
         .btn-wrapper {
             text-align: center;

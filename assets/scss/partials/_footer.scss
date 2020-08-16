@@ -10,6 +10,7 @@
             .footer-links {
                 margin-right: 10px;
                 img {
+                    cursor: pointer;
                     width: 50px;
                 }
                 &:last-child {
@@ -20,6 +21,9 @@
             }
         }
         p {
+            font-family: engilshRegular;
+            font-weight: 100;
+            font-size: 12px;
             text-align: left;
         }
     }
@@ -30,10 +34,17 @@
             }
         }
         p {
-            font-family: engilshRegular;
             color: rgba(255, 255, 255, 0.8);
-            font-weight: 100;
-            font-size: 12px;
         }
+        @media(max-width: 992px) {
+            ul {
+                img {
+                    filter: none;
+                }
+            }
+            p {
+             color:  black;
+            }
+          }
     }
 }
